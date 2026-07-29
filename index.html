@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcos Retamero | Desarrollador &amp; Administrador de Sistemas</title>
+<meta name="description" content="Portfolio de Marcos Retamero, técnico en Sistemas en Red (ASIR), desarrollador front-end y administrador de sistemas.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
+<meta property="og:title" content="Marcos Retamero — Portfolio">
+<meta property="og:description" content="Desarrollador Full Stack, administrador de sistemas y técnico en redes.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+
+<div id="loader"><div class="loader-logo">MR</div><div class="loader-bar"><div class="loader-fill"></div></div></div>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor" id="cursor"></div>
+<canvas id="matrix-canvas"></canvas>
+<canvas id="confetti-canvas"></canvas>
+
+<nav>
+  <div class="logo" id="logoClick">MR.</div>
+  <div class="nav-links">
+    <a href="#about">Sobre mí</a>
+    <a href="#experience">Experiencia</a>
+    <a href="#education">Formación</a>
+    <a href="#stack">Stack</a>
+    <a href="#services">Servicios</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </div>
+  <div class="nav-right">
+    <div class="theme-toggle" id="themeToggle"></div>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <canvas id="particles"></canvas>
+  <div class="hero-content">
+    <div class="hero-tag"><span class="dot-live"></span> Disponible para nuevas oportunidades</div>
+    <h1>Marcos <span class="grad">Retamero</span></h1>
+    <p class="role">Desarrollador Full Stack · Administrador de Sistemas · Técnico en Redes (ASIR)</p>
+    <p class="tagline">Construyo software y gestiono infraestructuras con precisión técnica y mentalidad de aprendizaje constante.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="#contact">Contactar</a>
+      <a class="btn btn-ghost" href="#" id="downloadCv">Descargar CV </a>
+      <a class="btn btn-ghost" href="https://github.com/markitossevillano2002-tech" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/marcos-retamero-orovio-228b013aa/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="scroll-indicator"><div class="scroll-mouse"><div class="dot"></div></div></div>
+</section>
+
+<section id="about" class="reveal">
+  <div class="section-tag">// Sobre mí</div>
+  <h2 class="section-title">Quién soy y cómo trabajo</h2>
+  <div class="about-grid">
+    <div class="avatar-wrap"><div class="avatar" id="avatarBox">
+      <img id="avatarImg" src="foto.jpg" alt="Marcos Retamero" style="width:100%;height:100%;object-fit:cover;border-radius:28px;display:none;">
+      <span id="avatarFallback">MR</span>
+    </div></div>
+    <div class="about-text">
+      <p>Soy Marcos Retamero, técnico en Sistemas Microinformáticos y Redes (ASIR) con experiencia práctica en desarrollo de software, desarrollo front-end y administración de sistemas.</p>
+      <p>Me apasiona entender cómo funcionan las cosas por dentro: desde la lógica de una aplicación hasta la infraestructura que la sostiene. Disfruto tanto escribiendo código como configurando y asegurando sistemas.</p>
+      <p>Trabajo con formalidad, responsabilidad y alta capacidad de adaptación al cambio, tanto en equipo como de forma autónoma. Aporto una visión técnica completa: sé programar, sé administrar sistemas y sé cómo se conectan ambos mundos.</p>
+      <div class="about-badges">
+        <span class="badge">Formal y responsable</span>
+        <span class="badge">Adaptable al cambio</span>
+        <span class="badge">Trabajo en equipo</span>
+        <span class="badge">Disponibilidad total</span>
+        <span class="badge">Vehículo propio</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <div class="section-tag">// Experiencia</div>
+  <h2 class="section-title">Trayectoria profesional</h2>
+  <p class="section-desc">Experiencia en desarrollo de software, desarrollo web y administración de sistemas en distintos entornos.</p>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-role">Desarrollador de Software</div>
+        <div class="tl-company">Atos</div>
+        <div class="tl-meta">Contrato en prácticas</div>
+        <p class="tl-desc">Participación en el ciclo de desarrollo de software dentro de un entorno corporativo, reforzando buenas prácticas de programación y trabajo en equipo.</p>
+        <div class="tl-tags"><span class="tl-tag">Desarrollo</span><span class="tl-tag">Trabajo en equipo</span></div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-role">Desarrollador Front-end</div>
+        <div class="tl-company">G-karma</div>
+        <div class="tl-meta">Encargado de la web de distintos clientes</div>
+        <p class="tl-desc">Responsable del desarrollo, mantenimiento y actualización de sitios web para varios clientes, cuidando la parte visual y la experiencia de usuario.</p>
+        <div class="tl-tags"><span class="tl-tag">Front-end</span><span class="tl-tag">Web</span><span class="tl-tag">Clientes</span></div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <div class="tl-role">Administrador de Sistemas</div>
+        <div class="tl-company">General Dynamics Santa Bárbara</div>
+        <div class="tl-meta">Contrato en prácticas</div>
+        <p class="tl-desc">Tareas de administración de sistemas en un entorno industrial exigente, adquiriendo práctica real en infraestructura y soporte técnico.</p>
+        <div class="tl-tags"><span class="tl-tag">Sistemas</span><span class="tl-tag">Infraestructura</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="reveal">
+  <div class="section-tag">// Formación</div>
+  <h2 class="section-title">Estudios y especialización</h2>
+  <div class="edu-grid">
+    <div class="edu-card"><div class="edu-icon">01</div><div class="edu-title">Técnico en Sistemas Microinformáticos y Redes (ASIR)</div><div class="edu-sub">Fundación Sopeña</div></div>
+    <div class="edu-card"><div class="edu-icon">02</div><div class="edu-title">Desarrollo de Aplicaciones Multiplataforma</div><div class="edu-sub">Salesianas de Nervión</div></div>
+    <div class="edu-card"><div class="edu-icon">03</div><div class="edu-title">Curso de especialización</div><div class="edu-sub">IES Punta del Verde</div></div>
+  </div>
+</section>
+
+<section id="stack" class="reveal">
+  <div class="section-tag">// Stack técnico</div>
+  <h2 class="section-title">Tecnologías y herramientas</h2>
+  <div class="stack-cats">
+    <div>
+      <div class="stack-cat-title">Desarrollo</div>
+      <div class="stack-row">
+        <div class="stack-chip">Front-end<div class="level-bar"><div class="level-fill" style="--w:80%"></div></div></div>
+        <div class="stack-chip">Desarrollo de software<div class="level-bar"><div class="level-fill" style="--w:75%"></div></div></div>
+        <div class="stack-chip">Apps multiplataforma<div class="level-bar"><div class="level-fill" style="--w:70%"></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="stack-cat-title">Sistemas y redes</div>
+      <div class="stack-row">
+        <div class="stack-chip">Administración de sistemas<div class="level-bar"><div class="level-fill" style="--w:85%"></div></div></div>
+        <div class="stack-chip">Redes / DNS<div class="level-bar"><div class="level-fill" style="--w:80%"></div></div></div>
+        <div class="stack-chip">Linux / Ubuntu<div class="level-bar"><div class="level-fill" style="--w:75%"></div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="stack-cat-title">Lenguajes y bases de datos</div>
+      <div class="stack-row">
+        <div class="stack-chip">SQL<div class="level-bar"><div class="level-fill" style="--w:75%"></div></div></div>
+        <div class="stack-chip">Bash Scripting<div class="level-bar"><div class="level-fill" style="--w:70%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="reveal">
+  <div class="section-tag">// Servicios</div>
+  <h2 class="section-title">Qué puedo ofrecer</h2>
+  <div class="edu-grid">
+    <div class="service-card"><div class="service-icon">01</div><div class="service-title">Desarrollo Web</div><div class="service-desc">Sitios y aplicaciones web modernas, funcionales y adaptadas a cada cliente.</div></div>
+    <div class="service-card"><div class="service-icon">02</div><div class="service-title">Soporte Informático</div><div class="service-desc">Resolución de incidencias y asistencia técnica a usuarios y equipos.</div></div>
+    <div class="service-card"><div class="service-icon">03</div><div class="service-title">Administración de Sistemas</div><div class="service-desc">Gestión, configuración y mantenimiento de infraestructuras en red.</div></div>
+    <div class="service-card"><div class="service-icon">04</div><div class="service-title">Consultoría Tecnológica</div><div class="service-desc">Acompañamiento técnico para decisiones de infraestructura y desarrollo.</div></div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <div class="section-tag">// Proyectos</div>
+  <h2 class="section-title">Trabajos y proyectos</h2>
+  <div class="projects-empty">
+    <span class="projects-tag">EN CONSTRUCCIÓN</span>
+    <h3>Actualmente estoy trabajando en nuevos proyectos.</h3>
+    <p>Muy pronto podrás verlos aquí.</p>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <div class="section-tag">// Habilidades</div>
+  <h2 class="section-title">Soft skills</h2>
+  <div class="skills-grid">
+    <div class="soft-chip">Trabajo en equipo</div>
+    <div class="soft-chip">Adaptabilidad</div>
+    <div class="soft-chip">Responsabilidad</div>
+    <div class="soft-chip">Formalidad</div>
+    <div class="soft-chip">Autonomía</div>
+    <div class="soft-chip">Resolución de problemas</div>
+  </div>
+</section>
+
+<section id="languages" class="reveal">
+  <div class="section-tag">// Idiomas</div>
+  <h2 class="section-title">Idiomas</h2>
+  <div style="max-width:500px">
+    <div class="lang-item"><div class="lang-head"><span>Castellano</span><span>Nativo</span></div><div class="lang-bar"><div class="lang-fill" style="--w:100%"></div></div></div>
+    <div class="lang-item"><div class="lang-head"><span>Inglés</span><span>Nivel intermedio</span></div><div class="lang-bar"><div class="lang-fill" style="--w:60%"></div></div></div>
+  </div>
+</section>
+
+<section id="stats" class="reveal">
+  <div class="section-tag">// En cifras</div>
+  <h2 class="section-title">Trayectoria en números</h2>
+  <div class="stats-grid">
+    <div><div class="stat-num" data-count="3">0</div><div class="stat-label">Empresas / prácticas</div></div>
+    <div><div class="stat-num" data-count="3">0</div><div class="stat-label">Centros de formación</div></div>
+    <div><div class="stat-num" data-count="2">0</div><div class="stat-label">Idiomas</div></div>
+    <div><div class="stat-num" data-count="100">0</div><div class="stat-label">% disponibilidad</div></div>
+  </div>
+</section>
+
+<section id="github" class="reveal">
+  <div class="section-tag">// GitHub</div>
+  <h2 class="section-title">Actividad de desarrollo</h2>
+  <div class="github-card">
+    <p style="color:var(--muted)">Datos en vivo desde <a href="https://github.com/markitossevillano2002-tech" target="_blank" rel="noopener" style="color:var(--accent)">@markitossevillano2002-tech</a>.</p>
+    <div class="github-grid">
+      <div class="gh-stat">Repositorios<br><strong id="ghRepos">—</strong></div>
+      <div class="gh-stat">Seguidores<br><strong id="ghFollowers">—</strong></div>
+      <div class="gh-stat">Siguiendo<br><strong id="ghFollowing">—</strong></div>
+      <div class="gh-stat">Miembro desde<br><strong id="ghSince">—</strong></div>
+    </div>
+    <p class="gh-note">Estadísticas obtenidas automáticamente de la API pública de GitHub.</p>
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <div class="section-tag">// Contacto</div>
+  <h2 class="section-title">Hablemos</h2>
+  <div class="contact-grid">
+    <form id="contactForm">
+      <div class="form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre" required></div>
+      <div class="form-group"><label>Correo</label><input type="email" placeholder="tucorreo@email.com" required></div>
+      <div class="form-group"><label>Mensaje</label><textarea rows="5" placeholder="Cuéntame en qué proyecto necesitas ayuda..." required></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%; justify-content:center;">Enviar mensaje</button>
+    </form>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:retamerooroviomarcos@gmail.com"><div>Correo electrónico<br><small style="color:var(--muted)">retamerooroviomarcos@gmail.com</small></div></a>
+      <a class="contact-link" href="tel:618892942"><div>Teléfono<br><small style="color:var(--muted)">618 892 942</small></div></a>
+      <a class="contact-link" href="https://www.linkedin.com/in/marcos-retamero-orovio-228b013aa/" target="_blank" rel="noopener"><div>LinkedIn<br><small style="color:var(--muted)">marcos-retamero-orovio</small></div></a>
+      <a class="contact-link" href="https://github.com/markitossevillano2002-tech" target="_blank" rel="noopener"><div>GitHub<br><small style="color:var(--muted)">@markitossevillano2002-tech</small></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo" style="font-size:1.5rem;">MR.</div>
+  <div class="footer-links">
+    <a href="#about">Sobre mí</a><a href="#experience">Experiencia</a><a href="#stack">Stack</a><a href="#contact">Contacto</a>
+  </div>
+  <p>"Detrás de cada sistema estable hay alguien que entendió bien la base."</p>
+  <p style="margin-top:10px;">© 2026 Marcos Retamero. Todos los derechos reservados.</p>
+  <p class="easter-hint">nota: prueba a escribir "sudo" en el teclado, o el código Konami </p>
+</footer>
+
+<div class="back-top" id="backTop"></div>
+
+<div id="terminal">
+  <div id="term-output"></div>
+  <div id="term-input-row"><span>marcos@portfolio:~$</span><input id="term-input" autocomplete="off"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
